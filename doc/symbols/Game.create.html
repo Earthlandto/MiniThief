@@ -5,7 +5,7 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="generator" content="JsDoc Toolkit" />
 		
-		<title>JsDoc Reference - Point</title>
+		<title>JsDoc Reference - Game.create</title>
 
 		<style type="text/css">
 			/* default.css */
@@ -212,14 +212,12 @@ ul.inheritsList
 <!-- ============================== class title ============================ -->
 			<h1 class="classTitle">
 				
-				Class Point
+				Namespace Game.create
 			</h1>
 
 <!-- ============================== class summary ========================== -->			
 			<p class="description">
 				
-				<br />Extends
-					.<br />
 				
 			
 				
@@ -231,8 +229,8 @@ ul.inheritsList
 
 <!-- ============================== constructor summary ==================== -->			
 			
-			<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class Point.">
-				<caption>Class Summary</caption>
+			<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class Game.create.">
+				<caption>Namespace Summary</caption>
 				<thead>
 					<tr>
 						<th scope="col">Constructor Attributes</th>
@@ -244,7 +242,7 @@ ul.inheritsList
 						<td class="attributes">&nbsp;</td>
 						<td class="nameDescription" >
 							<div class="fixedFont">
-								<b><a href="../symbols/Point.html#constructor">Point</a></b>(x, y)
+								<b><a href="../symbols/Game.create.html#constructor">Game.create</a></b>
 							</div>
 							<div class="description"></div>
 						</td>
@@ -258,6 +256,42 @@ ul.inheritsList
 
 <!-- ============================== methods summary ======================== -->
 			
+				
+				
+				<table class="summaryTable" cellspacing="0" summary="A summary of the methods documented in the class Game.create.">
+					<caption>Method Summary</caption>
+					<thead>
+						<tr>
+							<th scope="col">Method Attributes</th>
+							<th scope="col">Method Name and Description</th>
+						</tr>
+					</thead>
+					<tbody>
+					
+						<tr>
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">Game.create.<b><a href="../symbols/Game.create.html#.gameElement">gameElement</a></b>(param)
+								</div>
+								<div class="description">Returns a game element.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">Game.create.<b><a href="../symbols/Game.create.html#.tile">tile</a></b>(position, texture)
+								</div>
+								<div class="description">Returns a tile.</div>
+							</td>
+						</tr>
+					
+					</tbody>
+				</table>
+				
+				
+				
+			
 <!-- ============================== events summary ======================== -->
 			
 
@@ -265,11 +299,11 @@ ul.inheritsList
 			
 			<div class="details"><a name="constructor"> </a>
 				<div class="sectionTitle">
-					Class Detail
+					Namespace Detail
 				</div>
 				
 				<div class="fixedFont">
-						<b>Point</b>(x, y)
+						<b>Game.create</b>
 				</div>
 				
 				<div class="description">
@@ -280,23 +314,6 @@ ul.inheritsList
 				
 				
 				
-					
-						<dl class="detailList">
-						<dt class="heading">Parameters:</dt>
-						
-							<dt>
-								<span class="light fixedFont">{Number}</span>  <b>x</b>
-								
-							</dt>
-								<dd>The x component.</dd>
-						
-							<dt>
-								<span class="light fixedFont">{Number}</span>  <b>y</b>
-								
-							</dt>
-								<dd>The y component.</dd>
-						
-						</dl>
 					
 					
 					
@@ -312,6 +329,115 @@ ul.inheritsList
 			
 
 <!-- ============================== method details ========================= -->		
+			
+				<div class="sectionTitle">
+					Method Detail
+				</div>
+				
+					<a name=".gameElement"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					<span class="light">{<a href="../symbols/GameElement.html">GameElement</a>}</span>
+					<span class="light">Game.create.</span><b>gameElement</b>(param)
+					
+					</div>
+					<div class="description">
+						Returns a game element.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Object}</span> <b>param</b>
+									
+								</dt>
+								<dd>The parameters of the gameelement.
+The object param contains these fields:
+<ul>
+<li><strong>position</strong> : {Point} The position.</li>
+<li><strong>texture</strong> : {String} The name of the texture.</li>
+<li><strong>width</strong> : {Number} The width.</li>
+<li><strong>height</strong> : {Number} The height.</li>
+<li><strong>shape</strong> : {Shape} The shape.</li>
+<li><strong>behaviour</strong> : {Object} The behaviour's parameters.</li>
+<li><strong>isStatic</strong> : {Bool} True if static.</li>
+<li><strong>isSensor</strong> : {Bool} True if sensor.</li>
+<li><strong>name</strong> : {String} The name of the game element.</li>
+</ul></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{<a href="../symbols/GameElement.html">GameElement</a>}</span> The game element.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name=".tile"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					<span class="light">{<a href="../symbols/GameElement.html">GameElement</a>}</span>
+					<span class="light">Game.create.</span><b>tile</b>(position, texture)
+					
+					</div>
+					<div class="description">
+						Returns a tile.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{<a href="../symbols/Point.html">Point</a>}</span> <b>position</b>
+									
+								</dt>
+								<dd>The position.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{String}</span> <b>texture</b>
+									
+								</dt>
+								<dd>The name of the texture.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{<a href="../symbols/GameElement.html">GameElement</a>}</span> The tile.</dd>
+							
+							</dl>
+						
+						
+						
+
+					
+				
 			
 			
 <!-- ============================== event details ========================= -->		

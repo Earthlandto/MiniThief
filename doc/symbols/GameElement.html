@@ -193,9 +193,15 @@ ul.inheritsList
 	
 	<li><a href="../symbols/Behaviour.html">Behaviour</a></li>
 	
+	<li><a href="../symbols/Game.html">Game</a></li>
+	
+	<li><a href="../symbols/Game.create.html">Game.create</a></li>
+	
 	<li><a href="../symbols/GameElement.html">GameElement</a></li>
 	
 	<li><a href="../symbols/Point.html">Point</a></li>
+	
+	<li><a href="../symbols/Shape.html">Shape</a></li>
 	
 </ul>
 <hr />
@@ -252,6 +258,96 @@ ul.inheritsList
 
 <!-- ============================== methods summary ======================== -->
 			
+				
+				
+				<table class="summaryTable" cellspacing="0" summary="A summary of the methods documented in the class GameElement.">
+					<caption>Method Summary</caption>
+					<thead>
+						<tr>
+							<th scope="col">Method Attributes</th>
+							<th scope="col">Method Name and Description</th>
+						</tr>
+					</thead>
+					<tbody>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/GameElement.html#addBehaviour">addBehaviour</a></b>(behaviourParam)
+								</div>
+								<div class="description">Adds a new behaviour to the game element.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/GameElement.html#applyForce">applyForce</a></b>(vector)
+								</div>
+								<div class="description">Applies a force to the game element.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/GameElement.html#destroy">destroy</a></b>()
+								</div>
+								<div class="description">Destroys the game element.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/GameElement.html#getName">getName</a></b>()
+								</div>
+								<div class="description">Returns the name of the game element.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/GameElement.html#getPosition">getPosition</a></b>()
+								</div>
+								<div class="description">Returns the position of the game element.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/GameElement.html#moveTo">moveTo</a></b>(position)
+								</div>
+								<div class="description">Moves the game element to a position.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/GameElement.html#rotate">rotate</a></b>(angle)
+								</div>
+								<div class="description">Rotates the game element.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/GameElement.html#setVelocity">setVelocity</a></b>(vector)
+								</div>
+								<div class="description">Sets the velocity of the game element.</div>
+							</td>
+						</tr>
+					
+					</tbody>
+				</table>
+				
+				
+				
+			
 <!-- ============================== events summary ======================== -->
 			
 
@@ -282,7 +378,19 @@ ul.inheritsList
 								<span class="light fixedFont">{Object}</span>  <b>param</b>
 								
 							</dt>
-								<dd>The parameters of the gameelement.</dd>
+								<dd>The parameters of the gameelement.
+The object param contains these fields:
+<ul>
+<li><strong>position</strong> : {Point} The position.</li>
+<li><strong>texture</strong> : {String} The name of the texture.</li>
+<li><strong>width</strong> : {Number} The width.</li>
+<li><strong>height</strong> : {Number} The height.</li>
+<li><strong>shape</strong> : {Shape} The shape.</li>
+<li><strong>behaviour</strong> : {Object} The behaviour's parameters.</li>
+<li><strong>isStatic</strong> : {Bool} True if static.</li>
+<li><strong>isSensor</strong> : {Bool} True if sensor.</li>
+<li><strong>name</strong> : {String} The name of the game element.</li>
+</ul></dd>
 						
 						</dl>
 					
@@ -301,6 +409,280 @@ ul.inheritsList
 
 <!-- ============================== method details ========================= -->		
 			
+				<div class="sectionTitle">
+					Method Detail
+				</div>
+				
+					<a name="addBehaviour"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>addBehaviour</b>(behaviourParam)
+					
+					</div>
+					<div class="description">
+						Adds a new behaviour to the game element.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Object}</span> <b>behaviourParam</b>
+									
+								</dt>
+								<dd>The behaviour's parameters.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="applyForce"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>applyForce</b>(vector)
+					
+					</div>
+					<div class="description">
+						Applies a force to the game element.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{<a href="../symbols/Point.html">Point</a>}</span> <b>vector</b>
+									
+								</dt>
+								<dd>The force vector.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="destroy"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>destroy</b>()
+					
+					</div>
+					<div class="description">
+						Destroys the game element.
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="getName"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{String}</span>
+					<b>getName</b>()
+					
+					</div>
+					<div class="description">
+						Returns the name of the game element.
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{String}</span> The name.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getPosition"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{<a href="../symbols/Point.html">Point</a>}</span>
+					<b>getPosition</b>()
+					
+					</div>
+					<div class="description">
+						Returns the position of the game element.
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{<a href="../symbols/Point.html">Point</a>}</span> The name.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="moveTo"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>moveTo</b>(position)
+					
+					</div>
+					<div class="description">
+						Moves the game element to a position.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{<a href="../symbols/Point.html">Point</a>}</span> <b>position</b>
+									
+								</dt>
+								<dd>The new position.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="rotate"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>rotate</b>(angle)
+					
+					</div>
+					<div class="description">
+						Rotates the game element.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>angle</b>
+									
+								</dt>
+								<dd>The angle in degrees.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setVelocity"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setVelocity</b>(vector)
+					
+					</div>
+					<div class="description">
+						Sets the velocity of the game element.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{<a href="../symbols/Point.html">Point</a>}</span> <b>vector</b>
+									
+								</dt>
+								<dd>The velocity vector.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					
+				
+			
 			
 <!-- ============================== event details ========================= -->		
 			
@@ -312,7 +694,7 @@ ul.inheritsList
 <!-- ============================== footer ================================= -->
 		<div class="fineprint" style="clear:both">
 			
-			Documentation generated by <a href="http://code.google.com/p/jsdoc-toolkit/" target="_blank">JsDoc Toolkit</a> 2.4.0 on Wed Feb 01 2017 20:07:55 GMT+0100 (CET)
+			Documentation generated by <a href="http://code.google.com/p/jsdoc-toolkit/" target="_blank">JsDoc Toolkit</a> 2.4.0 on Wed Feb 01 2017 23:21:29 GMT+0100 (CET)
 		</div>
 	</body>
 </html>
