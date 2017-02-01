@@ -4,6 +4,13 @@
 
 //----------------------------------------------------------------------
 
+/**
+* @class
+* @extends {Vector2}
+* @classdesc This class represents a point (x,y) into an 2D space
+* @param {Number} x The x component.
+* @param {Number} y The y component.
+*/
 var Point = function (x,y){
     Vector2.call(this,x,y);
 };
@@ -13,6 +20,10 @@ Point.prototype.constructor = Point;
 
 //----------------------------------------------------------------------
 
+/**
+ * Enum for shape values.
+ * @enum {number}
+ */
 var Shape = {
   RECTANGLE : 0,
   CIRCLE : 1
@@ -21,7 +32,12 @@ var Shape = {
 //----------------------------------------------------------------------
 
 // BEHAVIOURS
-
+/**
+* @class
+* @extends {Script}
+* @classdesc This class represents a behaviour for a GameElement.
+* @param {Object} param The parameters of the behaviour.
+*/
 var Behaviour = function (param) {
     Script.call(this);
 
@@ -97,7 +113,12 @@ Behaviour.KEY_CONTROL = {
 //----------------------------------------------------------------------
 
 
-
+/**
+* @class
+* @extends {Script}
+* @classdesc This class represents a GameElement.
+* @param {Object} param The parameters of the gameelement.
+*/
 var GameElement = function (param) {
 
   if(param !== null){
