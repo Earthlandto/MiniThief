@@ -44,7 +44,7 @@ var Shape = {
 * @param {Object} param The parameters of the behaviour.
 * The object param contains these callbacks:
 <ul>
-<li><strong>start</strong> : This function runs when the engine start at first time.</li>
+<li><strong>start</strong> : This function runs when the engine starts at first time.</li>
 <li><strong>update</strong> : This function runs each frame.</li>
 <li><strong>onEnterCollision</strong> : This function runs when the game element collides with other game element.</li>
 <li><strong>onExitCollision</strong> : This function runs when the collision is finished.</li>
