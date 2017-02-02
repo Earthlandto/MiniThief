@@ -51,7 +51,7 @@
 <span class='line'> 44</span> * @param {Object} param The parameters of the behaviour.
 <span class='line'> 45</span> * The object param contains these callbacks:
 <span class='line'> 46</span> &lt;ul>
-<span class='line'> 47</span> &lt;li>&lt;strong>start&lt;/strong> : This function runs when the engine start at first time.&lt;/li>
+<span class='line'> 47</span> &lt;li>&lt;strong>start&lt;/strong> : This function runs when the engine starts at first time.&lt;/li>
 <span class='line'> 48</span> &lt;li>&lt;strong>update&lt;/strong> : This function runs each frame.&lt;/li>
 <span class='line'> 49</span> &lt;li>&lt;strong>onEnterCollision&lt;/strong> : This function runs when the game element collides with other game element.&lt;/li>
 <span class='line'> 50</span> &lt;li>&lt;strong>onExitCollision&lt;/strong> : This function runs when the collision is finished.&lt;/li>
@@ -145,7 +145,7 @@
 <span class='line'>138</span> &lt;li>&lt;strong>width&lt;/strong> : {Number} The width.&lt;/li>
 <span class='line'>139</span> &lt;li>&lt;strong>height&lt;/strong> : {Number} The height.&lt;/li>
 <span class='line'>140</span> &lt;li>&lt;strong>shape&lt;/strong> : {Shape} The shape.&lt;/li>
-<span class='line'>141</span> &lt;li>&lt;strong>behaviour&lt;/strong> : {Object} The behaviour's parameters.&lt;/li>
+<span class='line'>141</span> &lt;li>&lt;strong>behaviour&lt;/strong> : {Object} The parameters of the behaviour.&lt;/li>
 <span class='line'>142</span> &lt;li>&lt;strong>isStatic&lt;/strong> : {Bool} True if static.&lt;/li>
 <span class='line'>143</span> &lt;li>&lt;strong>isSensor&lt;/strong> : {Bool} True if sensor.&lt;/li>
 <span class='line'>144</span> &lt;li>&lt;strong>name&lt;/strong> : {String} The name of the game element.&lt;/li>
@@ -247,7 +247,7 @@
 <span class='line'>240</span> 
 <span class='line'>241</span> </span><span class="COMM">/**
 <span class='line'>242</span> * Adds a new behaviour to the game element.
-<span class='line'>243</span> * @param {Object} behaviourParam The behaviour's parameters.
+<span class='line'>243</span> * @param {Object} behaviourParam The parameters of the behaviour.
 <span class='line'>244</span> */</span><span class="WHIT">
 <span class='line'>245</span> </span><span class="NAME">GameElement.prototype.addBehaviour</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="KEYW">function</span><span class="WHIT"> </span><span class="PUNC">(</span><span class="NAME">behaviourParam</span><span class="PUNC">)</span><span class="WHIT"> </span><span class="PUNC">{</span><span class="WHIT">
 <span class='line'>246</span> </span><span class="WHIT">  </span><span class="KEYW">var</span><span class="WHIT"> </span><span class="NAME">b</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="KEYW">new</span><span class="WHIT"> </span><span class="NAME">Behaviour</span><span class="PUNC">(</span><span class="NAME">behaviourParam</span><span class="PUNC">)</span><span class="PUNC">;</span><span class="WHIT">
@@ -343,7 +343,7 @@
 <span class='line'>336</span> &lt;li>&lt;strong>width&lt;/strong> : {Number} The width.&lt;/li>
 <span class='line'>337</span> &lt;li>&lt;strong>height&lt;/strong> : {Number} The height.&lt;/li>
 <span class='line'>338</span> &lt;li>&lt;strong>shape&lt;/strong> : {Shape} The shape.&lt;/li>
-<span class='line'>339</span> &lt;li>&lt;strong>behaviour&lt;/strong> : {Object} The behaviour's parameters.&lt;/li>
+<span class='line'>339</span> &lt;li>&lt;strong>behaviour&lt;/strong> : {Object} The parameters of the behaviour.&lt;/li>
 <span class='line'>340</span> &lt;li>&lt;strong>isStatic&lt;/strong> : {Bool} True if static.&lt;/li>
 <span class='line'>341</span> &lt;li>&lt;strong>isSensor&lt;/strong> : {Bool} True if sensor.&lt;/li>
 <span class='line'>342</span> &lt;li>&lt;strong>name&lt;/strong> : {String} The name of the game element.&lt;/li>

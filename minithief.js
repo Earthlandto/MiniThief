@@ -138,7 +138,7 @@ Behaviour.KEY_CONTROL = {
 <li><strong>width</strong> : {Number} The width.</li>
 <li><strong>height</strong> : {Number} The height.</li>
 <li><strong>shape</strong> : {Shape} The shape.</li>
-<li><strong>behaviour</strong> : {Object} The behaviour's parameters.</li>
+<li><strong>behaviour</strong> : {Object} The parameters of the behaviour.</li>
 <li><strong>isStatic</strong> : {Bool} True if static.</li>
 <li><strong>isSensor</strong> : {Bool} True if sensor.</li>
 <li><strong>name</strong> : {String} The name of the game element.</li>
@@ -240,7 +240,7 @@ GameElement.prototype.rotate = function (angle) {
 
 /**
 * Adds a new behaviour to the game element.
-* @param {Object} behaviourParam The behaviour's parameters.
+* @param {Object} behaviourParam The parameters of the behaviour.
 */
 GameElement.prototype.addBehaviour = function (behaviourParam) {
   var b = new Behaviour(behaviourParam);
@@ -336,7 +336,7 @@ Game.create = {}; // namespace
 <li><strong>width</strong> : {Number} The width.</li>
 <li><strong>height</strong> : {Number} The height.</li>
 <li><strong>shape</strong> : {Shape} The shape.</li>
-<li><strong>behaviour</strong> : {Object} The behaviour's parameters.</li>
+<li><strong>behaviour</strong> : {Object} The parameters of the behaviour.</li>
 <li><strong>isStatic</strong> : {Bool} True if static.</li>
 <li><strong>isSensor</strong> : {Bool} True if sensor.</li>
 <li><strong>name</strong> : {String} The name of the game element.</li>
