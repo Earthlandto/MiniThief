@@ -19,6 +19,16 @@ var run = function() {
     isSensor: false
   });
 
+  var mushroom = Game.create.gameElement({
+    name: 'mushroom',
+    position: new Point(0,0),
+    texture: 'images/mushroom.png',
+    width: 1,
+    height: 1,
+    shape: Shape.RECTANGLE,
+  });
+
+  Game.add(mushroom);
   Game.add(player);
   Game.run();
 };
