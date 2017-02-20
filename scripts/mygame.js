@@ -3,7 +3,7 @@ function getRandomArbitrary(min, max) {
 }
 
 function createRandomMushroom(minPosX, maxPosX, minPosY, maxPosY) {
-  var minX = minPosX || 0;
+  var minX = minPosX || 0;
   var maxX = maxPosX || 10;
   var minY = minPosY || 0;
   var maxY = maxPosY || 10;
@@ -20,7 +20,7 @@ function createRandomMushroom(minPosX, maxPosX, minPosY, maxPosY) {
     behaviour: {
       onEnterCollision: function(otherGameElement) {
         if ('player' === otherGameElement) {
-          createRandomMushroom(-3, 3, -3, 3);
+          createRandomMushroom(minX, maxX, minY, maxY);
           this.gameElement.destroy();
         }
       },
@@ -31,7 +31,16 @@ function createRandomMushroom(minPosX, maxPosX, minPosY, maxPosY) {
 
 var run = function() {
 
+  var widthWorld = 10;
+  var heightWorld = 10;
+
   Game.init();
+
+  for (var i = -(widthWorld / 2); i < widthWorld / 2; i++) {
+    for (var j = -(heightWorld / 2); j < heightWorld / 2; j++) {
+      Game.add(Game.create.tile(new Point(i, j), 'images/sand.png'));
+    }
+  }
 
   var player = Game.create.gameElement({
     name: "player",
@@ -48,7 +57,7 @@ var run = function() {
     isSensor: false
   });
 
-  createRandomMushroom(-3, 3, -3, 3);
+  createRandomMushroom(-widthWorld / 2, widthWorld / 2, -heightWorld / 2, heightWorld / 2);
 
   Game.add(player);
   Game.run();
