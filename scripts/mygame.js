@@ -3,9 +3,9 @@ function getRandomArbitrary(min, max) {
 }
 
 function createRandomMushroom(minPosX, maxPosX, minPosY, maxPosY) {
-  var minX = minPosX || 0;
+  var minX = minPosX || -10;
   var maxX = maxPosX || 10;
-  var minY = minPosY || 0;
+  var minY = minPosY || -10;
   var maxY = maxPosY || 10;
 
   var randX = getRandomArbitrary(minX, maxX);
