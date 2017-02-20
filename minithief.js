@@ -157,7 +157,9 @@ var GameElement = function (param) {
     var isStatic = param.isStatic || false;
     var isSensor = param.isSensor || false;
     var name = param.name || null;
+    var userData = param.userData || null;
 
+    this.userData = userData;
     this.spriteBuilder = new SpriteBuilder();
 
     this.spriteBuilder.create(texture,position,width,height).
@@ -192,6 +194,10 @@ var GameElement = function (param) {
 */
 GameElement.prototype.getName = function () {
   return this.gameObject.getName();
+};
+
+GameElement.prototype.setUserData = function (userData) {
+  this.userData = userData;
 };
 
 /**
