@@ -33,11 +33,9 @@ var run = function() {
     height: 1,
     shape: Shape.RECTANGLE,
     behaviour: {
-      update: function () {
-        console.log(this.gameElement.userData);
-      },
+      update: Behaviour.KEY_CONTROL,
     },
-    userData: 'Hello World',
+    userData: null,
     isStatic: false,
     isSensor: false
   });
