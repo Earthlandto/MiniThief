@@ -17,6 +17,14 @@ function createRandomMushroom(minPosX, maxPosX, minPosY, maxPosY) {
     texture: 'images/mushroom.png',
     width: 1,
     height: 1,
+    behaviour: {
+      onEnterCollision: function(otherGameElement) {
+        if ('player' === otherGameElement) {
+          createRandomMushroom(-3, 3, -3, 3);
+          this.gameElement.destroy();
+        }
+      },
+    },
     shape: Shape.RECTANGLE,
   }));
 }
