@@ -102,24 +102,21 @@ Behaviour.prototype.onDestroy = function (){
 //----------------------------------------------------------------------
 
 
-Behaviour.KEY_CONTROL = {
-  update: function () {
+Behaviour.KEY_CONTROL = function () {
+  var v = 2;
 
-    var v = 2;
-
-    if (Input.isKeyPressed(37)) {
-      // LEFT
-      this.gameElement.setVelocity(new Vector2(-v,0));
-    }else if (Input.isKeyPressed(38)) {
-      // UP
-      this.gameElement.setVelocity(new Vector2(0,v));
-    }else if (Input.isKeyPressed(39)) {
-      // RIGHT
-      this.gameElement.setVelocity(new Vector2(v,0));
-    }else if (Input.isKeyPressed(40)) {
-      // DOWN
-      this.gameElement.setVelocity(new Vector2(0,-v));
-    }
+  if (Input.isKeyPressed(37)) {
+    // LEFT
+    this.gameElement.setVelocity(new Vector2(-v,0));
+  }else if (Input.isKeyPressed(38)) {
+    // UP
+    this.gameElement.setVelocity(new Vector2(0,v));
+  }else if (Input.isKeyPressed(39)) {
+    // RIGHT
+    this.gameElement.setVelocity(new Vector2(v,0));
+  }else if (Input.isKeyPressed(40)) {
+    // DOWN
+    this.gameElement.setVelocity(new Vector2(0,-v));
   }
 };
 

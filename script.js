@@ -9,7 +9,9 @@ var mario1 = Game.create.gameElement({
   width : 1,
   height : 1,
   shape : Shape.RECTANGLE,
-  behaviour : Behaviour.KEY_CONTROL,
+  behaviour : {
+    update: Behaviour.KEY_CONTROL,
+  },
   isStatic : false,
   isSensor : false
 });
