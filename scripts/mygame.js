@@ -26,6 +26,7 @@ function createRandomMushroom(minPosX, maxPosX, minPosY, maxPosY) {
       },
     },
     shape: Shape.RECTANGLE,
+    isSensor: true,
   }));
 }
 
